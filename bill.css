@@ -296,7 +296,7 @@ td {
 
 .bill {
     border: 2px solid var(--bc);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     /* padding: 1rem; */
 }
 
