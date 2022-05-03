@@ -1,9 +1,39 @@
 * {
     margin: 0;
     padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+:root {
+    --bc: red;
+    --white: #ffffff; 
+    --hightlight: red;
+    --p-low: 0.5rem;
+    --p-normal: 1rem;
+    --p-high: 1.5rem;
 
+    --micro: 0.3rem;
+    --mini: 0.4rem;
+    --minute: 0.5rem;
+    --tiny: 0.6rem;
+    --small: 0.8rem;
+    --normal: 1rem;
+    --medium: 1.2rem;
+    --big: 1.4rem;
+    --large: 1.5rem;
+    --huge: 1.7rem;
+    --light-green: rgb(124,252,0);
+    --print-margin-left: 20px;
+    --print-margin-right: 20px;
+}
+
+.fs-big {
+    font-size: var(--big) !important;
+}
+
+.fs-medium {
+    font-size: var(--medium) !important;
+}
 
 html {
     font-size: 10px;
@@ -47,27 +77,20 @@ html {
 }
 
 
-:root {
-    --bc: red;
-    --white: #ffffff; 
-    --hightlight: red;
-    --p-low: 0.5rem;
-    --p-normal: 1rem;
-    --p-high: 1.5rem;
 
-    --micro: 0.3rem;
-    --mini: 0.4rem;
-    --minute: 0.5rem;
-    --tiny: 0.6rem;
-    --small: 0.8rem;
-    --normal: 1rem;
-    --medium: 1.2rem;
-    --big: 1.4rem;
-    --large: 1.5rem;
-    --huge: 1.7rem;
-    --light-green: rgb(124,252,0);
-  }
 
+@page { 
+    --margin-horizontal: 20px;
+    --margin-vertical: 20px;
+    size: A4; 
+    /* height: auto;  */
+    /* margin: 25px;  */
+    margin-left: var(--margin-horizontal);
+    margin-right: var(--margin-horizontal);
+    margin-top: var(--margin-vertical);
+    margin-bottom: var(--margin-vertical);
+
+}
 
 
 @media print {
@@ -95,21 +118,13 @@ html {
     .bill {
         display: block;
         /* width: 100%; */
-        height:100%;
+        /* height:100%; */
         /* position:absolute; */
         /* top:0px; */
         /* bottom:0px; */
-        margin: auto;
+        /* margin: auto; */
         /* margin-top: 0px !important; */
         /* border: 1px solid; */
-    }
-
-    
-    @page { 
-        size: A4; 
-        /* height: auto;  */
-        /* margin: 25px;  */
-        margin-top: auto;
     }
 }
 
@@ -360,7 +375,7 @@ td {
 }
 
 .sub-main-head {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .fs-1-2 {
